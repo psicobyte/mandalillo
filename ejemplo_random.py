@@ -20,7 +20,7 @@
 import random
 import mandalillo
 
-aleatoria = "".join([random.choice("01") for b in range(1,41)])
+aleatoria = "".join([random.choice("01") for b in range(1,26)])
 
 nombre_archivo = aleatoria + ".png"
 

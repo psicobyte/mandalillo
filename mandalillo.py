@@ -36,18 +36,18 @@ archivos_fondos = ("img/fondo1.png","img/fondo2.png","img/fondo3.png","img/fondo
 class Mandalillo:
     def __init__(self,cadena):
 
-        if re.match('^[0-1]*$', cadena) and len(cadena) == 40:
+        if re.match('^[0-1]*$', cadena) and len(cadena) == 25:
             self.primus = Anillo(cadena[0:12],radio_maximo)
             self.secundus = Anillo(cadena[12:24],self.primus.radio_minimo)
-            self.tertius = Anillo(cadena[24:36],self.secundus.radio_minimo)
+            self.tertius = Anillo(cadena[13:25],self.secundus.radio_minimo)
 
-            self.central = int(cadena[37:40],2)
-            self.color_central = int(cadena[35:38],2)
-            imagen_fondo = int(cadena[32:35],2)
+            self.central = int(cadena[10:13],2)
+            self.color_central = int(cadena[7:10],2)
+            imagen_fondo = int(cadena[4:7],2)
 
             self.sello = Representacion(imagen_fondo)
         else:
-            raise ValueError('se esperaban 40 digitos binarios')
+            raise ValueError('se esperaban 25 digitos binarios')
 
     def dibuja(self):
         fondo = self.primus.dibuja(0, self.sello, coordenadas_del_centro)

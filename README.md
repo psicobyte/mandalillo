@@ -1,11 +1,11 @@
-# mandalillo
+# mandalillo25
 
 
-Pequeño módulo que genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de cuarenta unos y ceros. Cada cadena concreta tiene su propia imagen.
+Pequeño módulo que genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de 25 unos y ceros. Cada cadena concreta tiene su propia imagen.
 
 ## Requisitos:
 
-mandalillo usa los siguientes módulos:
+mandalillo25 usa los siguientes módulos:
 
 * copy
 * math
@@ -19,7 +19,7 @@ mandalillo.pl está ideado para ser usado como módulo en otros programas de est
 
     import mandalillo
 
-    cadena = "0000100110011101011101000010010010110100"
+    cadena = "0000100110011101011101000"
 
     imagen = mandalillo.Mandalillo(cadena)
     salida = imagen.dibuja()
@@ -34,7 +34,7 @@ Mandalillo también puede ser usado independientemente, del modo
 
 por ejemplo:
 
-mandalillo.py 0000100110011101011101000010010010110100
+mandalillo.py 0000100110011101011101000
 
 ## Archivos en este repo:
 
