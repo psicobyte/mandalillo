@@ -3,6 +3,8 @@
 
 Pequeño módulo que genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de cuarenta unos y ceros. Cada cadena concreta tiene su propia imagen.
 
+(en la rama mandalillo25 de este proyecto hay una versión que usa una sucesión de 25 unos y ceros)
+
 ## Requisitos:
 
 mandalillo usa los siguientes módulos:
