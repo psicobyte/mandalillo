@@ -1,5 +1,6 @@
 # mandalillo
 
+(esta es la versión para Python 3)
 
 Pequeño módulo que genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de cuarenta unos y ceros. Cada cadena concreta tiene su propia imagen.
 
@@ -13,7 +14,7 @@ mandalillo usa los siguientes módulos:
 * math
 * re
 * sys
-* PIL
+* Pillow
 
 ## Uso:
 
